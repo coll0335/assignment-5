@@ -1,0 +1,510 @@
+@charset "UTF-8";
+/* Responsive Setup */
+
+@-moz-viewport { width: device-width; scale: 1;}
+@-ms-viewport { width: device-width; scale: 1;}
+@-webkit-viewport { width: device-width; scale: 1;}
+@-o-viewport { width: device-width; scale: 1;}
+@viewport { width: device-width; scale: 1;}
+
+html {
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-o-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+/* CSS */
+
+html, body {
+	font-family: 'Open Sans', sans-serif;
+	width:100%;
+	height: 100%;
+	letter-spacing: 1px;
+
+}
+
+body {
+	position: relative;
+	z-index:999;
+}
+
+main {
+	width:90%;
+	margin: 0 auto 1rem;
+}
+
+/* Header */
+
+header {
+	background:url(../images/pool.jpg) no-repeat top center ;
+	background-size: cover;
+	background-attachment:fixed;
+	position:relative;
+}
+
+.logo {
+	width: 100%;
+	margin:0;
+	padding:0;
+}
+
+/* Navigation */
+
+.nav-top[data-state="collapsed"]{
+	display:none;
+}
+
+.nav li, 
+.nav-btn {
+	font-family: 'Ubunto', sans-serif;
+	display:block;
+	text-align:center;
+	padding: .5rem;
+	background-color:hsla(197,67%,27%,1);
+	border-bottom: 1px solid hsla(0,0%,100%,1);
+	
+}
+
+.nav li:first-child {
+	border-top: 1px solid hsla(0,0%,100%,1);
+}
+
+.nav li:last-child {
+	border-bottom: none;
+}
+
+.nav-btn {
+	border-bottom: none;
+}
+
+.nav a,
+.nav a:link,
+.nav a:visited, 
+.nav-btn {
+	color:hsla(0,0%,100%,1);
+	text-decoration:none;
+}
+
+.nav a:hover,
+.nav a:focus,
+.nav a:active {
+	opacity:.6;
+}
+
+.nav-top[data-state="expanded"]{
+	display: block;
+}
+
+@media only screen and (min-width: 23.75em) {
+	
+	.nav-btn {
+		display:none;
+	}
+	
+	.nav-top[data-state="collapsed"]{
+		display:block;
+	}
+	
+	.nav-top ul {
+		text-align:center;
+		background-color:hsla(197,67%,27%,.65);
+	}
+	
+	.nav-top li {
+		display:inline-block;
+		padding: 1rem 1.5rem;
+		border:none;
+		background-color:transparent;
+	}
+	
+	.nav-top li:first-child {
+		border-top:none;
+		padding-left:0;
+	}
+	
+	.nav-top li:last-child {
+		padding-right:0;
+	}
+	
+}
+
+@media only screen and (min-width: 42.5em) {
+
+	.nav-top li {
+		padding: 1rem 2rem;
+	}
+	
+	.nav-top li:first-child {
+		padding-left:0rem;
+	}
+	
+}
+
+@media only screen and (min-width: 53.125em) {
+
+	.nav-top li {
+		padding: 1rem 4rem;
+	}
+	
+	.nav-top li:first-child {
+		padding-left:0rem;
+	}
+}
+
+
+/* Main */
+
+main {
+	text-align:center;
+	line-height:1.5rem;
+	max-width:50rem;
+	margin-top: -3.5rem;
+	padding: 0 2rem;
+	background-color:hsla(0,0%,100%,1);
+	padding-top:4rem;
+}
+
+
+h1,h2 {
+	font-family:'Ubunto', sans-serif;
+}
+
+.home h1 {
+	padding:1.5rem 0;
+	border-bottom: 2px solid hsla(0,0%,0%,1);
+}
+
+h2 {
+	font-size:18px;
+}
+
+.tagline {
+	font-family: 'Ubunto', sans-serif;
+	font-size:20px;
+	text-transform:uppercase;
+	color:hsla(197,67%,27%,1);
+	
+}
+
+.home img {
+	width:100%;
+}
+
+.contact {
+	border-top: 2px solid hsla(0,0%,0%,1);
+	margin:1.5rem 0;
+}
+
+.contact h3 {
+	font-family: 'Ubunto', sans-serif;
+	font-size:18px;
+	margin-bottom:0;
+}
+
+.contact p {
+	margin-top:0;
+	margin-top:.5rem;
+}
+
+@media only screen and (min-width: 53.125em) {
+	
+	main {
+		position:relative;
+	}
+	
+}
+
+/* Footer */
+
+footer {
+	background-color:hsla(197,67%,27%,1);
+	text-align:center;
+	line-height:1.5rem;
+}
+
+.nav-bottom ul {
+	padding-top: 1rem;
+}
+
+.nav-bottom li {
+	padding:.5rem;
+}
+
+.nav-bottom li:first-child {
+	border-top: none;
+}
+
+.copyright {
+	font-family: 'Ubunto' ,sans-serif;
+	font-size:12px;
+	color:hsla(0,0%,100%,1);
+	margin:0;
+	padding-bottom:1rem;
+}
+
+@media only screen and (min-width: 23.75em) {
+	
+	.nav-bottom li {
+		display:inline-block;
+		border:none;
+		padding:0 1rem;
+		border-right: 1px solid hsla(0,0%,100%,1);
+	}
+	
+	.nav-bottom li:last-child {
+		margin-right:0;
+		border-right:none;
+	}
+	
+	.copyright {
+		margin-top:1rem;
+	}
+	
+}
+
+@media only screen and (min-width: 42.1875em) {
+	
+	.nav-bottom li {
+		padding: 0 2rem;
+	}
+}
+
+@media only screen and (min-width: 50em) {
+	
+	.nav-bottom li {
+		padding: 0 3rem;
+	}
+}
+
+
+/* Schedule */
+
+.schedule h1 {
+	padding: 1.5rem 0;
+	border-bottom: 2px solid hsla(0,0%,0%,1);
+}
+
+.schedule h2 {
+	margin-bottom: .5rem;
+}
+
+.hours-table {
+	display:none;
+}
+
+.hours-box {
+	margin-top:-.25rem;
+	margin-bottom: 1.5rem;
+}
+
+
+input[name='panel'] {
+	display:none;
+}
+
+
+label:hover {
+	background:hsla(197,67%,27%,.8);
+}
+
+.collapsible {
+	display:block;
+	padding:0 1rem;
+	width:100%;
+	margin-top: .5rem;
+}
+
+.hours-box :nth-child(odd) {
+	color:hsla(197,67%,27%,1);
+	font-weight:bold;
+	margin-top:.5rem;
+}
+
+.hours-list label {
+	display:block;
+	background:hsla(197,67%,27%,1);
+	color:hsla(0,0%,100%,1);
+	cursor:pointer;
+	font-size:16px;
+	padding: .2rem 0;
+}
+
+.hours-list label:hover,
+.hours-list label:focus,
+.hours-list label:active {
+	opacity:.6;
+}
+
+.hours-list .collapsible :nth-child(even) {
+	color:hsla(197,67%,27%,1);
+	font-weight:bold;
+	margin-top:.5rem;
+	}
+
+.hours-list .collapsible :nth-child(odd) {
+	color:hsla(0,0%,0%,1);
+	font-weight:normal;
+	margin-top:0;
+	}
+
+input[name='panel'] + .collapsible {
+	overflow:hidden;
+	height:0;
+	-webkit-transition: height 1s ease;
+  	-moz-transition: height 1s ease;
+  	-ms-transition: height 1s ease;
+  	-o-transition: height 1s ease;
+  	transition: height 1s ease;
+}
+
+input[name='panel']:checked + .collapsible {
+  overflow: auto;
+  height: 200px; /* needs a numeric value here to keep transition */
+}
+
+@media only screen and (min-width: 23.75em) {
+	
+	.hours-list label {
+	 	width:17.375rem;
+		margin:auto;
+	}
+	
+}
+
+@media only screen and (min-width:50.75em ) {
+
+	.hours-list {
+		display:none;
+	}
+	
+	.hours-table {
+		display:block;
+		margin: 1.5rem 0;
+	}
+	
+	.hours-table td {
+		font-size:14px;
+	}
+	
+	.hours-table thead {
+		background-color:hsla(197,67%,27%,1);
+		color:hsla(0,0%,100%,1);
+	}
+	
+	.hours-table th,
+	.hours-table td {
+		padding: 0.5rem 1rem;
+		text-align: left;
+		vertical-align:middle;
+	}
+
+	.hours-table tr:nth-child(even){
+		background-color:hsla(197,67%,27%,.2);
+	}
+
+	.hours-table tr:last-child{
+		border-bottom: 3px solid #666;
+	}
+	
+}
+
+/* Prices */
+
+.prices h1 {
+	padding: 1.5rem 0;
+	border-bottom: 2px solid hsla(0,0%,0%,1);
+}
+
+.prices img {
+	width:100%;
+}
+
+.pricelist h3 {
+	font-size:16px;
+	margin-top:1rem;
+	margin-bottom:0.25rem;
+}
+
+.pricelist dl {
+	max-width:11.4375rem;
+	margin:auto;
+}
+
+.pricelist dt,
+.pricelist dd {
+	font-size:1rem;
+}
+
+.pricelist dt {
+	margin-top:.5rem;
+	margin-bottom:.25rem;
+	color:hsla(197,67%,27%,1);
+}
+
+.pricelist dd {
+	padding-bottom:.75rem;
+	border-bottom: 1px solid hsla(0,0%,0%,1);
+}
+
+.pricelist dd:last-child {
+	border-bottom: none;
+}
+
+
+.nonmembers {
+	margin-top: 1.5rem;
+}
+
+.nonmembers dd:last-child {
+	margin-bottom: .5rem;
+}
+
+.registration a {
+	padding:.25rem;
+	background-color:hsla(197,67%,27%,1);
+	text-decoration:none;
+	font-size:12px;
+	color:hsla(0,0%,100%,1);
+}
+
+.registration a:hover,
+.registration a:focus,
+.registration a:active {
+	opacity:.6;
+}
+
+@media only screen and (min-width: 40.625em) {
+	
+	.pricelist {
+		overflow:auto;
+		margin:auto;
+		width:26rem;
+		height: 28rem;
+	}
+	
+	.members {
+		float:left;
+		margin-top:0;
+	}
+	
+	.nonmembers {
+		float:right;
+		margin-top: 0;
+	}
+	
+	.nonmembers a {
+		position:absolute;
+		left:17.4rem;
+	}
+	
+	.registration a {
+		top: 22rem;
+		position:relative;
+	}
+}
+
+
+
+
