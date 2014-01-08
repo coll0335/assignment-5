@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>The Lane</title>
+<link href="css/general.css" rel="stylesheet">
+<link href="css/reset.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<!-- Tags for older devices -->
+<meta name="handheldfriendly" content="true">
+<meta name="mobileoptimized" content="240">
+<!--  For newer devices; we want to support:
+		-any width
+		-set the scale to 1 -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+	<body>
+		<header>
+			<a href="#" class="nav-btn">Menu</a>
+			<nav id="nav" class="nav nav-top" data-state="collapsed">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="schedule.html">Schedule</a></li>
+					<li><a href="prices.html">Prices</a></li>
+				</ul>
+			</nav><img src="images/the-lane.svg" alt="The Lane" class="logo">
+
+		</header>
+		<main class="schedule">	 
+				<h1>Schedule</h1>
+					<p>The Lane is open all week, with operating hours throughout the day. We offer different swim types to accomodate each members preference. Differing swim types have different time zones to work around one another. </p>
+			<h2>Pool Hours</h2>
+			<ol class="hours-list">
+				<li>
+				<label for="monday">Monday</label>
+				<input type="checkbox" name="panel" id="monday">
+					<dl class="collapsible">
+						<dt></dt> 
+						<dd>Junior Breakin' Kids: 5:00Pm – 6:00PM</dd>
+						<dd>6:00am - 9:00am</dd>
+						<dd>Saturday - Sunday</dd>
+						<dd>7:00am - 8:00am</dd>
+					</dl>
+				</li>
+				<li>
+				<label for="kids-swim">Kids Swim</label>
+				<input type="checkbox" name="panel" id="kids-swim">
+					<dl class="collapsible">
+						<dt></dt>
+						<dd>Monday - Friday</dd>
+						<dd>9:00am - 11:00am</dd>
+						<dd>Saturday</dd>
+						<dd>8:00am - 11:00am</dd>
+						<dd>Sunday</dd>
+						<dd>8:00am - 10:00am</dd>
+					</dl>
+				</li>
+				<li>
+					<label for="family-swim">Family Swim</label>
+					<input type="checkbox" name="panel" id="family-swim">
+					<dl class="collapsible">
+						<dt></dt>
+						<dd>Monday - Friday</dd>
+						<dd>12:00pm - 3:00pm</dd>
+						<dd>Saturday</dd>
+						<dd>12:00pm - 3:00pm</dd>
+						<dd>Sunday</dd>
+						<dd>11:00am - 2:00pm</dd>
+					</dl>
+				</li>
+				<li>
+				<label for="fifty-swim">50+ Swim</label>
+				<input type="checkbox" name="panel" id="fifty-swim">
+					<dl class="collapsible">
+						<dt></dt>
+						<dd>Monday - Friday</dd>
+						<dd>3:00pm - 6:00pm</dd>
+						<dd>Saturday</dd>
+						<dd>3:00pm - 6:00pm</dd>
+						<dd>Sunday</dd>
+						<dd>2:00am - 4:00pm</dd>
+					</dl>
+				</li>
+				<li>
+				<label for="lane-swim">Lane Swim</label>
+				<input type="checkbox" name="panel" id="lane-swim">
+					<dl class="collapsible">
+						<dt></dt>
+						<dd>Monday - Friday</dd>
+						<dd>6:00pm - 9:00pm</dd>
+						<dd>Saturday</dd>
+						<dd>6:00pm - 8:00pm</dd>
+						<dd>Sunday</dd>
+						<dd>4:00pm - 6:00pm</dd>
+					</dl>
+				</li>
+			</ol>
+			<table class="hours-table">
+				<thead>
+					<tr>
+						<th scope="col">Day of the Week</th>
+						<th scope="col">Early Bird</th>
+						<th scope="col">Lane Swim</th>
+						<th scope="col">Family Swim</th>
+						<th scope="col">50+ Swim</th>
+						<th scope="col">Lane Swim</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">Monday</th>
+						<td>6:00am - 9:00am</td>
+						<td>9:00am - 11:00am</td>
+						<td>12:00pm - 3:00pm</td>
+						<td>3:00pm - 6:00pm</td>
+						<td>6:00pm - 9:00pm</td>
+					</tr>
+					<tr>
+						<th scope="row">Tuesday</th>
+						<td>6:00am - 9:00am</td>
+						<td>9:00am - 11:00am</td>
+						<td>12:00pm - 3:00pm</td>
+						<td>3:00pm - 6:00pm</td>
+						<td>6:00pm - 9:00pm</td>
+					</tr>
+					<tr>
+						<th scope="row">Wednesday</th>
+						<td>6:00am - 9:00am</td>
+						<td>9:00am - 11:00am</td>
+						<td>12:00pm - 3:00pm</td>
+						<td>3:00pm - 6:00pm</td>
+						<td>6:00pm - 9:00pm</td>
+					</tr>
+					<tr>
+						<th scope="row">Thursday</th>
+						<td>6:00am - 9:00am</td>
+						<td>9:00am - 11:00am</td>
+						<td>12:00pm - 3:00pm</td>
+						<td>3:00pm - 6:00pm</td>
+						<td>6:00pm - 9:00pm</td>
+					</tr>
+					<tr>
+						<th scope="row">Friday</th>
+						<td>6:00am - 9:00am</td>
+						<td>9:00am - 11:00am</td>
+						<td>12:00pm - 3:00pm</td>
+						<td>3:00pm - 6:00pm</td>
+						<td>6:00pm - 9:00pm</td>
+					</tr>
+					<tr>
+						<th scope="row">Saturday</th>
+						<td>7:00am - 8:00pm</td>
+						<td>8:00am - 11:00am</td>
+						<td>12:00pm - 3:00pm</td>
+						<td>3:00pm - 6:00pm</td>
+						<td>6:00pm - 8:00pm</td>
+					</tr>
+					<tr>
+						<th scope="row">Sunday</th>
+						<td>7:00am - 8:00pm</td>
+						<td>8:00am - 10:00am</td>
+						<td>11:00am - 2:00pm</td>
+						<td>2:00pm - 4:00pm</td>
+						<td>4:00pm - 6:00pm</td>
+					</tr>
+				</tbody>
+			</table>
+			<h2> Hours </h2>
+				<ul class="hours-box">
+					<li>Monday - Friday</li>
+					<li>6:00am - 9:00pm</li>
+					<li>Saturday</li>
+					<li>7:00am - 8:00pm</li>
+					<li>Sunday</li>
+					<li>7:00am - 6:00pm</li>
+				</ul>
+			<div class="contact">
+				<h3>Contact</h3>
+					<p>70 Aird Place Ottawa, ON. K2L 4C9 613-591-9283</p>
+			</div> <!-- Contact Closed -->
+		</main>
+		<footer>	
+			<nav class="nav nav-bottom">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="schedule.html">Schedule</a></li>
+					<li><a href="prices.html">Prices</a></li>
+				</ul>
+			</nav>
+			<p class="copyright">Copyright © 2013</p>
+		</footer>
+		<script src="js/nav.js"></script>
+	</body>
+</html>
